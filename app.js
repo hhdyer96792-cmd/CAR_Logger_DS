@@ -2,7 +2,7 @@
 const SUPABASE_URL = 'https://efagdgsmnecqtyuaogzi.supabase.co';
 const SUPABASE_ANON_KEY = 'sb_publishable_L3cgEGpUECYyCz3xkSd1uw_DWO9M9d6';
 
-const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+const sb = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
 // ==================== 2. ГЛОБАЛЬНЫЕ ПЕРЕМЕННЫЕ ====================
 let currentUser = null;
