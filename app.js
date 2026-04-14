@@ -96,13 +96,13 @@ const costsChart = document.getElementById('costsChart');
 const fuelChart = document.getElementById('fuelChart');
 // ==================== 4. АВТОРИЗАЦИЯ ====================
 async function signUp(email, password) {
-    const { data, error } = await supabase.auth.signUp({ email, password });
+    const { data, error } = await sb.auth.signUp({ email, password });
     if (error) throw error;
     return data;
 }
 
 async function signIn(email, password) {
-    const { data, error } = await supabase.auth.signInWithPassword({ email, password });
+    const { data, error } = await sb.auth.signInWithPassword({ email, password });
     if (error) throw error;
     return data;
 }
