@@ -643,8 +643,8 @@ tbody tr:hover { background: rgba(59,130,246,0.05); }
     }
     .input-icon {
         flex: 0 1 auto;           /* не растягивается */
-        width: 35%;               /* ограниченная ширина */
-        min-width: 70px;
+        width: 40%;               /* ограниченная ширина */
+        min-width: 80px;
         display: flex;
         align-items: center;
         gap: 6px;
@@ -669,9 +669,9 @@ tbody tr:hover { background: rgba(59,130,246,0.05); }
     }
     .update-btn {
         flex-shrink: 0;
-        width: 30px;
-        height: 44px;
-        border-radius: 30px;
+        width: 32px;
+        height: 32px;
+        border-radius: 32px;
         display: inline-flex;
         align-items: center;
         justify-content: center;
