@@ -559,48 +559,48 @@ tbody tr:hover { background: rgba(59,130,246,0.05); }
         font-size: 0.7rem;
     }
     
-    /* Блок обновления: поля горизонтально, кнопка по центру */
+/* Блок обновления: поля горизонтально, кнопка сбоку */
     .mileage-row {
-    display: flex;
-    flex-wrap: nowrap;
-    gap: 8px;
-    align-items: center;
-}
-.input-icon {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    background: var(--input-bg);
-    border: 1px solid var(--border);
-    border-radius: 48px;
-    padding: 0 12px;
-}
-.input-icon input {
-    border: none;
-    background: transparent;
-    padding: 10px 0;
-    width: 100%;
-    outline: none;
-}
-.update-btn {
-    flex-shrink: 0;
-    width: 44px;
-    height: 44px;
-    border-radius: 44px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-}
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 8px;
+        align-items: center;
+    }
+    .input-icon {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        background: var(--input-bg);
+        border: 1px solid var(--border);
+        border-radius: 48px;
+        padding: 0 12px;
+    }
+    .input-icon input {
+        border: none;
+        background: transparent;
+        padding: 10px 0;
+        width: 100%;
+        outline: none;
+    }
+    .update-btn {
+        flex-shrink: 0;
+        width: 44px;
+        height: 44px;
+        border-radius: 44px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
     .update-btn .btn-text {
-    display: none;
-}
-.update-btn {
-    width: 44px;
-    height: 44px;
-    padding: 0;
-}
-    
+        display: none;
+    }
+    /* Акцент на кнопке */
+    .update-btn:focus {
+        outline: none;
+        box-shadow: 0 0 0 2px var(--primary);
+    }    
       /* Планировщик ТО — ширина столбцов и перенос слов */
     .plan-table th, .plan-table td {
         white-space: normal;          /* разрешаем перенос */
