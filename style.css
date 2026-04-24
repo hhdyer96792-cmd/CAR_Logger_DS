@@ -1,0 +1,193 @@
+:root {
+    --bg: #f4f6fc;
+    --card-bg: rgba(255, 255, 255, 0.85);
+    --card-solid: #ffffff;
+    --text: #1e293b;
+    --text-muted: #5b6e8c;
+    --primary: #3b82f6;
+    --primary-dark: #2563eb;
+    --danger: #ef4444;
+    --warning: #f59e0b;
+    --success: #10b981;
+    --border: rgba(0, 0, 0, 0.08);
+    --shadow: 0 8px 20px rgba(0, 0, 0, 0.05), 0 2px 4px rgba(0, 0, 0, 0.02);
+    --glass-blur: blur(12px);
+    --input-bg: #ffffff;
+    --input-text: #1e293b;
+    --modal-bg: #ffffff;
+}
+
+body.dark {
+    --bg: #0f172a;
+    --card-bg: rgba(30, 41, 59, 0.85);
+    --card-solid: #1e293b;
+    --text: #e2e8f0;
+    --text-muted: #94a3b8;
+    --border: rgba(255, 255, 255, 0.1);
+    --shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    --input-bg: #334155;
+    --input-text: #f1f5f9;
+    --modal-bg: #1e293b;
+}
+
+@media (max-width: 768px) {
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+    }
+    .stat-card {
+        padding: 10px;
+    }
+    .stat-value {
+        font-size: 1.2rem;
+    }
+    .stat-label {
+        font-size: 0.7rem;
+    }
+}
+
+.input-icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.input-icon i, .input-icon svg {
+    position: absolute;
+    left: 12px;
+    color: var(--text-muted);
+    pointer-events: none;
+    width: 1.2rem;
+    height: 1.2rem;
+}
+.input-icon input {
+    padding-left: 2.5rem;
+    width: 100%;
+}
+
+.update-mileage-card .flex-row {
+    align-items: flex-end;
+}
+.update-mileage-card .flex-row button {
+    flex: 0 0 auto;
+    min-width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.modal-content select,
+.modal-content input,
+.modal-content .modern-select {
+    background-color: var(--input-bg);
+    color: var(--input-text);
+    border-color: var(--border);
+}
+
+@media (max-width: 768px) {
+    .plan-table th:first-child,
+    .plan-table td:first-child {
+        max-width: 120px;
+        white-space: normal;
+        word-break: break-word;
+    }
+    .plan-table th:nth-child(2),
+    .plan-table td:nth-child(2) {
+        max-width: 100px;
+        white-space: normal;
+        word-break: break-word;
+    }
+}
+
+.execute-plan-btn {
+    background: transparent;
+    border: none;
+    padding: 6px;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    font-size: 0;
+}
+.execute-plan-btn i, .execute-plan-btn svg {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    color: var(--primary);
+}
+
+.action-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: space-between;
+}
+.action-bar button {
+    flex: 1;
+    min-width: 80px;
+    padding: 8px 12px;
+    font-size: 0.85rem;
+    white-space: nowrap;
+}
+
+.action-bar {
+    position: sticky;
+    top: 0;
+    background: var(--card-solid);
+    z-index: 30;
+    padding: 8px 0;
+    margin-top: 0;
+    margin-bottom: 16px;
+    backdrop-filter: blur(8px);
+}
+
+@media (max-width: 768px) {
+    #maintenance-table th:first-child,
+    #maintenance-table td:first-child {
+        max-width: 120px;
+        white-space: normal;
+        word-break: break-word;
+    }
+}
+
+.modal-content {
+    background: var(--modal-bg);
+    max-width: 460px;
+    width: 90%;
+    padding: 20px;
+}
+.modal-content input,
+.modal-content select,
+.modal-content textarea {
+    background-color: var(--input-bg);
+    color: var(--input-text);
+    border: 1px solid var(--border);
+    padding: 10px 14px;
+    font-size: 0.9rem;
+}
+.modal-content label {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 4px;
+    text-align: left;
+    font-weight: 500;
+}
+.modal-actions button {
+    padding: 8px 16px;
+}
+.modal-content {
+    max-height: 80vh;
+    overflow-y: auto;
+}
+.modal-content label input[type="checkbox"] {
+    width: auto;
+    margin-right: 8px;
+    display: inline-block;
+}
+.modal-content label.checkbox-label {
+    display: flex;
+    align-items: center;
+}
+.modal-content select option {
+    background: var(--input-bg);
+    color: var(--input-text);
+}
