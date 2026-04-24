@@ -317,10 +317,11 @@ tbody tr:hover { background: rgba(59,130,246,0.05); }
     outline: none;
     transition: 0.2s;
 }
+/* подсветка поля ввода
 .modern-input:focus {
     border-color: var(--primary);
     box-shadow: 0 0 0 3px rgba(59,130,246,0.2);
-}
+} */
 
 /* =======================================================
    11. БЛОК ОБНОВЛЕНИЯ ПРОБЕГА И МОТОЧАСОВ (десктоп)
@@ -642,8 +643,8 @@ tbody tr:hover { background: rgba(59,130,246,0.05); }
     }
     .input-icon {
         flex: 0 1 auto;           /* не растягивается */
-        width: 45%;               /* ограниченная ширина */
-        min-width: 80px;
+        width: 35%;               /* ограниченная ширина */
+        min-width: 70px;
         display: flex;
         align-items: center;
         gap: 6px;
@@ -670,7 +671,7 @@ tbody tr:hover { background: rgba(59,130,246,0.05); }
         flex-shrink: 0;
         width: 30px;
         height: 44px;
-        border-radius: 44px;
+        border-radius: 30px;
         display: inline-flex;
         align-items: center;
         justify-content: center;
