@@ -595,7 +595,7 @@ tbody tr:hover { background: rgba(59,130,246,0.05); }
         flex-wrap: nowrap;
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
-        gap: 8px;
+        gap: 1px;
         position: sticky;
         top: 0;
         background: var(--bg);
