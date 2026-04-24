@@ -595,7 +595,7 @@ tbody tr:hover { background: rgba(59,130,246,0.05); }
         flex-wrap: nowrap;
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
-        gap: 6px;
+        gap: 7px;
         position: sticky;
         top: 0;
         background: var(--bg);
@@ -603,8 +603,8 @@ tbody tr:hover { background: rgba(59,130,246,0.05); }
     }
     .action-bar button {
         white-space: nowrap;
-        padding: 6px 10px;
-        font-size: 0.6rem;
+        padding: 7px 11px;
+        font-size: 0.7rem;
     }
     
     /* Перенос слов в первом столбце таблицы ТО */
