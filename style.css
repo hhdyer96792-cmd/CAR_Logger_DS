@@ -680,7 +680,7 @@ tbody tr:hover { background: rgba(59,130,246,0.05); }
     /* Таблица ТО — ширина столбцов на мобильных */
     #maintenance-table th:nth-child(1),
     #maintenance-table td:nth-child(1) {
-        max-width: 200px;
+        min-width: 160px;
         white-space: normal;
         word-break: break-word;
     }
