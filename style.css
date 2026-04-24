@@ -603,8 +603,8 @@ tbody tr:hover { background: rgba(59,130,246,0.05); }
     }
     .action-bar button {
         white-space: nowrap;
-        padding: 7px 11px;
-        font-size: 0.7rem;
+        padding: 8px 12px;
+        font-size: 0.8rem;
     }
     
     /* Перенос слов в первом столбце таблицы ТО */
