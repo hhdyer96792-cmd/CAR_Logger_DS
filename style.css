@@ -585,17 +585,17 @@ tbody tr:hover { background: rgba(59,130,246,0.05); }
         font-size: 0.75rem;
     }
     .plan-table td:first-child, .plan-table th:first-child {
-        max-width: 180px;
+        max-width: 300px;
         white-space: normal;
         word-break: break-word;
     }
     .plan-table td:nth-child(2), 
     .plan-table th:nth-child(2) {
-        max-width: 100px;
+        max-width: 80px;
     }
     .plan-table td:nth-child(3),
     .plan-table th:nth-child(3) {
-        max-width: 100px;
+        max-width: 80px;
     }
     
     /* Панель действий в одну строку, закреплена */
