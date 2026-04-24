@@ -595,7 +595,7 @@ tbody tr:hover { background: rgba(59,130,246,0.05); }
         flex-wrap: nowrap;
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
-        gap: 1px;
+        gap: 9px;
         position: sticky;
         top: 0;
         background: var(--bg);
@@ -603,7 +603,7 @@ tbody tr:hover { background: rgba(59,130,246,0.05); }
     }
     .action-bar button {
         white-space: nowrap;
-        padding: 4px 4px;
+        padding: 1px 4px;
         font-size: 0.8rem;
     }
     
