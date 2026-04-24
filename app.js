@@ -2948,7 +2948,7 @@ function renderMaintenancePlan() {
                 <td>${escapeHtml(op.category)}</td>
                 <td>${formattedDate}</td>
                 <td>${planData.planMileage.toLocaleString()} км</td>
-                <button class="icon-btn execute-plan-btn" data-op-id="${op.id}" data-op-name="${escapeHtml(op.name)}" title="Выполнить"><i data-lucide="check-circle"></i></button>
+                <td><button class="icon-btn execute-plan-btn" data-op-id="${op.id}" data-op-name="${escapeHtml(op.name)}" title="Выполнить"><i data-lucide="check-circle"></i></button></td>
             </tr>
         `;
     });
