@@ -618,21 +618,50 @@ tbody tr:hover { background: rgba(59,130,246,0.05); }
         padding-bottom: 100px;   /* увеличенный отступ для мобильных (было 80px) */
     }
     
-    /* 21.1 Компактные карточки статистики (пробег, моточасы) */
-    .stats-grid {
-        grid-template-columns: 1fr 1fr;
-        gap: 8px;
-    }
-    .stat-card {
-        padding: 8px 4px;
-    }
-    .stat-value {
-        font-size: 1.3rem;
-    }
-    .stat-label {
-        font-size: 0.7rem;
-    }
-    
+    /* 21.2 Блок обновления: поля и кнопка в одну строку */
+.mileage-row {
+    display: flex;
+    flex-wrap: nowrap;      /* запрещаем перенос на новую строку */
+    gap: 8px;
+    align-items: center;
+    justify-content: space-between;
+}
+.input-icon {
+    flex: 1 1 auto;         /* позволяем полям расти, но не более чем нужно */
+    min-width: 0;           /* разрешаем сжиматься */
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--input-bg);
+    border: 1px solid var(--border);
+    border-radius: 48px;
+    padding: 0 12px;
+}
+.input-icon i {
+    flex-shrink: 0;
+}
+.input-icon input {
+    border: none;
+    background: transparent;
+    padding: 10px 0;
+    width: 100%;
+    outline: none;
+    font-size: 0.85rem;
+}
+.update-btn {
+    flex-shrink: 0;         /* кнопка не сжимается */
+    width: 44px;
+    height: 44px;
+    border-radius: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    font-size: 0;           /* скрывает текст, если он есть */
+}
+.update-btn i {
+    font-size: 1.2rem;
+}
     /* 21.2 Блок обновления: поля и кнопка в одну строку, поля уже, фокус на всём блоке */
     .mileage-row {
         display: flex;
