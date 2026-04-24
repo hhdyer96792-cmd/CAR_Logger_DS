@@ -614,7 +614,7 @@ tbody tr:hover { background: rgba(59,130,246,0.05); }
 @media (max-width: 768px) {
     body {
         padding: 12px;
-        padding-bottom: 110px;   /* увеличенный отступ для мобильных (было 80px) */
+        padding-bottom: 100px;   /* увеличенный отступ для мобильных (было 80px) */
     }
     
     /* 21.1 Компактные карточки статистики (пробег, моточасы) */
@@ -643,7 +643,7 @@ tbody tr:hover { background: rgba(59,130,246,0.05); }
     .input-icon {
         flex: 0 1 auto;           /* не растягивается */
         width: 45%;               /* ограниченная ширина */
-        min-width: 120px;
+        min-width: 80px;
         display: flex;
         align-items: center;
         gap: 6px;
@@ -668,7 +668,7 @@ tbody tr:hover { background: rgba(59,130,246,0.05); }
     }
     .update-btn {
         flex-shrink: 0;
-        width: 44px;
+        width: 30px;
         height: 44px;
         border-radius: 44px;
         display: inline-flex;
