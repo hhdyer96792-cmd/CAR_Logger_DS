@@ -470,7 +470,7 @@ tbody tr:hover { background: rgba(59,130,246,0.05); }
     position: sticky;
     top: 0;
     background: var(--bg);
-    z-index: 10;
+    z-index: 30;
     padding: 8px 0;
 }
 .plan-controls {
@@ -642,7 +642,7 @@ tbody tr:hover { background: rgba(59,130,246,0.05); }
         position: sticky;
         top: 0;
         background: var(--bg);
-        z-index: 20;
+        z-index: 30;
     }
     .action-bar button {
         white-space: nowrap;
