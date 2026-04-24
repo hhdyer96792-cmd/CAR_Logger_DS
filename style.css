@@ -678,10 +678,10 @@ tbody tr:hover { background: rgba(59,130,246,0.05); }
         padding: 0;
         font-size: 0;              /* скрывает текст, если он есть */
     }
-    .update-btn i {
+    */ .update-btn i {
         font-size: 1.2rem;
         margin: 0;
-    }
+    } */
     /* Кнопка при фокусе 
     .update-btn:focus {
         outline: none;
