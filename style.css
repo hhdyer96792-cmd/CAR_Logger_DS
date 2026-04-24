@@ -632,7 +632,7 @@ tbody tr:hover { background: rgba(59,130,246,0.05); }
         font-size: 0.7rem;
     }
     
-    /* 21.2 Блок обновления: поля горизонтально, кнопка рядом (в одну строку) */
+    /* 21.2 Блок обновления: поля и кнопка в одну строку, поля уже, фокус на всём блоке */
     .mileage-row {
         display: flex;
         flex-wrap: nowrap;
@@ -641,7 +641,9 @@ tbody tr:hover { background: rgba(59,130,246,0.05); }
         margin-bottom: 0;
     }
     .input-icon {
-        flex: 1;
+        flex: 0 1 auto;           /* не растягивается */
+        width: 45%;               /* ограниченная ширина */
+        min-width: 120px;
         display: flex;
         align-items: center;
         gap: 6px;
@@ -649,6 +651,7 @@ tbody tr:hover { background: rgba(59,130,246,0.05); }
         border: 1px solid var(--border);
         border-radius: 48px;
         padding: 0 12px;
+        transition: all 0.2s;
     }
     .input-icon input {
         border: none;
@@ -656,6 +659,12 @@ tbody tr:hover { background: rgba(59,130,246,0.05); }
         padding: 10px 0;
         width: 100%;
         outline: none;
+        font-size: 0.85rem;
+    }
+    /* Фокус на всём блоке поля */
+    .input-icon:focus-within {
+        border-color: var(--primary);
+        box-shadow: 0 0 0 2px rgba(59,130,246,0.3);
     }
     .update-btn {
         flex-shrink: 0;
@@ -666,10 +675,18 @@ tbody tr:hover { background: rgba(59,130,246,0.05); }
         align-items: center;
         justify-content: center;
         padding: 0;
+        font-size: 0;              /* скрывает текст, если он есть */
     }
-    .update-btn .btn-text {
-        display: none;
+    .update-btn i {
+        font-size: 1.2rem;
+        margin: 0;
     }
+    /* Кнопка при фокусе 
+    .update-btn:focus {
+        outline: none;
+        box-shadow: 0 0 0 2px var(--primary);
+    } */
+}
     
     /* 21.3 Планировщик ТО — ширина каждого столбца + перенос слов */
     .plan-table th, .plan-table td {
