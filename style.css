@@ -605,6 +605,7 @@ tbody tr:hover { background: rgba(59,130,246,0.05); }
         white-space: nowrap;
         padding: 8px 4px;
         font-size: 0.8rem;
+        gap: 2px;
     }
     
     /* Перенос слов в первом столбце таблицы ТО */
