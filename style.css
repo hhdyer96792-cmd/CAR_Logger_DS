@@ -579,7 +579,7 @@ tbody tr:hover { background: rgba(59,130,246,0.05); }
 
 /* ========== МОБИЛЬНАЯ ВЕРСИЯ (ширина до 768px) ========== */
 @media (max-width: 768px) {
-    body { padding: 12px; padding-bottom: 50px; }
+    body { padding: 12px; padding-bottom: 100px; }
     
     /* Компактные карточки статистики */
     .stats-grid {
